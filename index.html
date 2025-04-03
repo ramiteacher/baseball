@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KBO 야구 정보</title>
+    <title>RAMI KBO</title>
     <style>
         * {
             margin: 0;
@@ -13,7 +13,7 @@
         }
         
         body {
-            background-color: #f5f5f5;
+            background-color: #f0f7ff;
             color: #333;
             line-height: 1.6;
         }
@@ -25,16 +25,22 @@
         }
         
         header {
-            background-color: #1a3a7e;
+            background-color: #f0f7ff;
             color: white;
             text-align: center;
-            padding: 20px 0;
-            margin-bottom: 30px;
-            border-radius: 5px;
+            padding: 10px 0;
+            margin-top: 20px;
+            margin-bottom: 0px;
+            border-radius: 20px;
         }
         
         h1, h2, h3 {
             margin-bottom: 15px;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        p {
+            margin-bottom: 15px;
+            font-family: 'Roboto', sans-serif;
         }
         
         .tab-container {
@@ -50,6 +56,7 @@
             border-radius: 5px 5px 0 0;
             margin-right: 5px;
             font-weight: bold;
+            font-family: 'Noto Sans KR', sans-serif;
         }
         
         .tab.active {
@@ -79,8 +86,8 @@
         th, td {
             padding: 12px 15px;
             text-align: left;
-            border-bottom: 1px solid #ddd;
-            word-wrap: break-word; /* 텍스트 줄바꿈 */
+            border-bottom: 1px solid #ddd
+            
         }
         
         th {
@@ -150,105 +157,60 @@
             background-color: #e74c3c;
             color: white;
             border: none;
-            padding: 5px 10px;
+            padding: 10px 20px;
             border-radius: 3px;
             cursor: pointer;
             font-size: 12px;
+            text-align: center; /* 텍스트 가로 정렬 */
+            white-space: nowrap; /* 텍스트를 한 줄로 유지 */
         }
         
         .loading {
             text-align: center;
             padding: 20px;
         }
-        
-        @media (max-width: 768px) {
-            .team-buttons {
-                flex-direction: column;
-            }
-            
-            th, td {
-                padding: 8px 10px;
-                font-size: 14px;
-            }
-        }
 
-        /* 엠블럼을 3줄로 표시 */
-        .team-emblem {
-            width: 60px;
-            height: 60px;
-            margin-right: 10px;
-            vertical-align: middle;
-        }
-
-        /* 표 스타일 개선 */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-            table-layout: auto; /* 열 너비 고정 */
-        }
-
-        th, td {
-            padding: 10px 12px;
-            font-size: 14px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-            word-wrap: break-word; /* 텍스트 줄바꿈 */
-        }
-
-        th {
-            background-color: #1a3a7e;
-            color: white;
-        }
-
-        /* 모바일 및 작은 화면에서의 스타일 */
-        @media (max-width: 768px) {
+        /* --- 초소형 화면 --- */
+        @media (max-width: 430px) {
             table {
-                font-size: 13px;
+                font-size: 11px;
             }
 
             th, td {
-                padding: 8px 10px;
+                padding: 2px 4px;
+                font-size: 11px;
+                text-align: center; /* 중앙 정렬 */
             }
-
+            th {
+                font-size:11px;
+                text-align: center; /* 중앙 정렬 */
+            }
             .team-emblem {
-                width: 45px; /* 모바일에서 엠블럼 크기 축소 */
-                height: 45px;
-            }
-
-            /* 엠블럼을 3줄로 표시 */
-            .team-buttons {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr); /* 3열로 배치 */
-                gap: 10px;
-            }
-        }
-
-        /* 더 작은 화면에서의 스타일 */
-        @media (max-width: 480px) {
-            table {
-                font-size: 12px;
-            }
-
-            th, td {
-                padding: 6px 8px;
-            }
-
-            .team-emblem {
-                width: 40px; /* 더 작은 화면에서 엠블럼 크기 축소 */
+                width: 40px;
                 height: 40px;
             }
 
             .team-buttons {
-                grid-template-columns: repeat(2, 1fr); /* 2열로 배치 */
+                grid-template-columns: repeat(2, 1fr);
+                
             }
+            .team-btn {
+            padding: 3px 2px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            color: white;
+            transition: all 0.3s ease;
+        }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>KBO 야구 정보</h1>
-        <p>최신 경기 결과 및 순위</p>
+        
+        <img src="images/logo.png" alt="KBO Logo" style="width: 150px; height: auto; margin-bottom: 10px;" onclick="window.location.href='/'">
+        
     </header>
     
     <div class="container">
@@ -277,7 +239,10 @@
         
         <div id="teams" class="content">
             <h2>KBO 팀 응원가</h2>
-            <p>응원하는 팀의 버튼을 클릭하면 응원가 영상으로 이동합니다.</p>
+            <p>
+
+                
+            </p>
             <div class="team-buttons">
                 <!-- 팀 버튼들이 여기에 추가됨 -->
             </div>
@@ -721,7 +686,7 @@
                                 <td>${game.score}</td>
                                 <td>${awayEmblem}${game.away}</td>
                                 <td>
-                                    <button class="highlight-btn" onclick="fetchYouTubeHighlight('${game.home} vs ${game.away} 하이라이트', '${game.date}')">보기</button>
+                                    <button class="highlight-btn" onclick="fetchYouTubeHighlight('${game.home} vs ${game.away} 하이라이트', '${game.date}')">영상</button>
                                 </td>
                             </tr>
                         `;
@@ -835,7 +800,7 @@
                         <td>${game.stadium || '-'}</td>
                         <td>
                             ${game.highlight ? 
-                            `<button class="highlight-btn" onclick="window.open('${game.highlight}', '_blank')">하이라이트</button>` : 
+                            `<button class="highlight-btn" onclick="window.open('${game.highlight}', '_blank')">영상</button>` : 
                             '미제공'}
                         </td>
                     </tr>
@@ -911,7 +876,7 @@
                         <td>${game.homeTeam}</td>
                         <td>${game.homeScore} : ${game.awayScore}</td>
                         <td>${game.awayTeam}</td>
-                        <td><button class="highlight-btn" onclick="window.open('${game.highlight}', '_blank')">하이라이트</button></td>
+                        <td><button class="highlight-btn" onclick="window.open('${game.highlight}', '_blank')">영상</button></td>
                     </tr>
                 `;
             });
@@ -1377,7 +1342,7 @@
                         <td>${game.score}</td>
                         <td>${awayEmblem} ${game.away}</td>
                         <td>
-                            <button class="highlight-btn" onclick="fetchYouTubeHighlight('${game.home} vs ${game.away} 하이라이트', '${game.date}')">보기</button>
+                            <button class="highlight-btn" onclick="fetchYouTubeHighlight('${game.home} vs ${game.away} 하이라이트', '${game.date}')">영상</button>
                         </td>
                     </tr>
                 `;
@@ -1502,7 +1467,7 @@
                     <td>${game.score}</td>
                     <td>${awayEmblem}${game.away}</td>
                     <td>
-                        <button class="highlight-btn" onclick="fetchYouTubeHighlight('${game.home} vs ${game.away} 하이라이트', '${game.date}')">보기</button>
+                        <button class="highlight-btn" onclick="fetchYouTubeHighlight('${game.home} vs ${game.away} 하이라이트', '${game.date}')">영상</button>
                     </td>
                 </tr>
             `;
