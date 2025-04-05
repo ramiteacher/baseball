@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-04-05 10:30:18",
+  "last_updated": "2025-04-05 13:32:04",
   "rankings": [
     {
       "rank": 1,
@@ -43,42 +43,42 @@
     },
     {
       "rank": 5,
-      "team": "두산",
-      "games": "11",
+      "team": "롯데",
+      "games": "12",
       "win": "5",
       "lose": "6",
-      "draw": "0",
+      "draw": "1",
       "win_rate": 0.455,
       "games_behind": "4.5"
     },
     {
-      "rank": 5,
-      "team": "키움",
-      "games": "11",
-      "win": "5",
-      "lose": "6",
+      "rank": 6,
+      "team": "NC",
+      "games": "9",
+      "win": "4",
+      "lose": "5",
       "draw": "0",
-      "win_rate": 0.455,
+      "win_rate": 0.444,
       "games_behind": "4.5"
     },
     {
       "rank": 7,
-      "team": "롯데",
-      "games": "11",
-      "win": "4",
-      "lose": "6",
-      "draw": "1",
-      "win_rate": 0.4,
+      "team": "두산",
+      "games": "12",
+      "win": "5",
+      "lose": "7",
+      "draw": "0",
+      "win_rate": 0.417,
       "games_behind": "5.0"
     },
     {
-      "rank": 8,
-      "team": "NC",
-      "games": "8",
-      "win": "3",
-      "lose": "5",
+      "rank": 7,
+      "team": "키움",
+      "games": "12",
+      "win": "5",
+      "lose": "7",
       "draw": "0",
-      "win_rate": 0.375,
+      "win_rate": 0.417,
       "games_behind": "5.0"
     },
     {
