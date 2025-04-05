@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-04-04 13:37:35",
+  "last_updated": "2025-04-05 10:30:18",
   "rankings": [
     {
       "rank": 1,
@@ -13,33 +13,33 @@
     },
     {
       "rank": 2,
-      "team": "삼성",
-      "games": "11",
-      "win": "7",
-      "lose": "4",
+      "team": "SSG",
+      "games": "9",
+      "win": "6",
+      "lose": "3",
       "draw": "0",
-      "win_rate": 0.636,
+      "win_rate": 0.667,
       "games_behind": "2.5"
     },
     {
       "rank": 3,
-      "team": "SSG",
-      "games": "8",
-      "win": "5",
-      "lose": "3",
+      "team": "삼성",
+      "games": "12",
+      "win": "7",
+      "lose": "5",
       "draw": "0",
-      "win_rate": 0.625,
+      "win_rate": 0.583,
       "games_behind": "3.0"
     },
     {
       "rank": 4,
       "team": "KT",
-      "games": "10",
+      "games": "11",
       "win": "5",
-      "lose": "4",
+      "lose": "5",
       "draw": "1",
-      "win_rate": 0.556,
-      "games_behind": "3.5"
+      "win_rate": 0.5,
+      "games_behind": "4.0"
     },
     {
       "rank": 5,
@@ -94,12 +94,12 @@
     {
       "rank": 10,
       "team": "한화",
-      "games": "11",
-      "win": "3",
+      "games": "12",
+      "win": "4",
       "lose": "8",
       "draw": "0",
-      "win_rate": 0.273,
-      "games_behind": "6.5"
+      "win_rate": 0.333,
+      "games_behind": "6.0"
     }
   ]
 }
