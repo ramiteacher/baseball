@@ -278,6 +278,41 @@
             .team-buttons {
                 grid-template-columns: repeat(2, 1fr);
             }
+            .tab-container {
+                display: flex;
+                margin-bottom: 20px;
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+            
+            .tab {
+                padding: 5px 10px; /* 가로 패딩 줄임 */
+                cursor: pointer;
+                background-color: #ddd;
+                border: none;
+                border-radius: 5px 5px 0 0;
+                margin-right: 5px;
+                font-weight: bold;
+                font-family: 'Noto Sans KR', sans-serif;
+                display: inline-block;
+                white-space: nowrap;
+            }
+            .splash-image {
+            width: 647px;
+            height: 647px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            object-fit: cover;
+        }
+            
+            .tab.active {
+                background-color: #fff;
+                border-bottom: 3px solid #1a3a7e;
+                display: inline-block;
+                white-space: nowrap;
+            }
             .team-btn {
                 padding: 3px 2px;
                 border: none;
