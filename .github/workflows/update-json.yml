@@ -1,15 +1,4 @@
-name: update-json
 
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: "10 10 * * *"  # 한국시간 19시 (KST) → UTC로는 10시
-    - cron: "13 13 * * *"  # 한국시간 22시 (KST) → UTC로는 13시
-    
-permissions:
-  contents: write  
-  
-jobs:
   update:
     runs-on: ubuntu-latest
 
